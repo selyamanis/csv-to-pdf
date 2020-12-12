@@ -37,9 +37,13 @@ To run the [home page](public/index.php).
 
 In this second page the list of generated PDF files is displayed for download.
 
+[Archive PDF](interface/archive/pdf).
+
 #### Archive ZIP page
 
 Also an archive ZIP can be downloaded of all the PDF files generated in the third page.
+
+[Archive ZIP](interface/archive/zip).
 
 ---
 
