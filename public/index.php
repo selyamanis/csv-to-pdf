@@ -1,0 +1,3 @@
+<?php
+// Redirection to the interface of csvToPDF extractor
+header('Location: ../interface/generatePdf.php');

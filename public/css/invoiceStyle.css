@@ -1,0 +1,44 @@
+* { margin: 0; padding: 0; }
+body { font: 14px Georgia, serif; }
+#page-wrap { page-break-before: always; margin: 70px 20px 20px 20px; }
+#page-wrap:first-child { page-break-before: never; }
+
+table { border-collapse: collapse; }
+table td, table th { border: 1px solid black; padding: 5px; }
+
+#headerLogoInvoice { position: fixed; left: 20px; top: 20px; right: 20px; height: 150px; }
+
+#logo { text-align: left; float: left; position: relative; margin-bottom: 25px; max-width: 540px; max-height: 100px; overflow: hidden; }
+
+#invoice p { font: 20px; }
+#headerInvoice { width: 100%; text-align: right; color: black; }
+#headerDateNum { width: 100%; text-align: right; color: grey; }
+
+#address { margin-top: 100px; } p { font: 16px; }
+#deliveryAddress { float: left; margin-bottom: 30px; width: 50%; }
+
+#invoiceAddress { float: right; margin-bottom: 30px; width: 50%; }
+
+#invoiceNum { margin-top: 200px; margin: 30px 0 0 0;}
+
+#meta { text-align: center; clear: both; width: 100%; margin-top: 30px; margin: 30px 0 0 0; border: 1px solid black; }
+#meta th { background: #eee; }
+#meta tr.meta-row td { border: 0; vertical-align: top; font: 11px; }
+
+#items { text-align: center; clear: both; width: 100%; margin-top: 30px; margin: 30px 0 0 0; border: 1px solid black; }
+#items th { background: #eee; }
+#items tr.item-row td { border: 0; vertical-align: top; }
+#items td.product { width: 200px; }
+
+#metaEnd table, table td { border: none; }
+
+#metaEndRight { margin-top: 30px; width: 300px; float: right; }
+#metaEndRight td { text-align: right;  }
+#metaEndRight td.meta-head { text-align: left; background: #eee; }
+
+#metaEndLeft { margin-top: 30px; width: 300px; float: left; }
+#metaEndLeft td { text-align: center; font: 11px; width: 100px; }
+#metaEndLeft td.meta-headLeft { text-align: center; font: 11px; background: #eee; }
+
+#footer { position: fixed; left: 20px; bottom: -70px; right: 20px; height: 150px; text-align: center; }
+#footer p { text-align: center; font: 10px; }
