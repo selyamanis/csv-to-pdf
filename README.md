@@ -7,16 +7,6 @@ Firstly, csvToPdf use PHP to extract CSV data into HTML. Lastly, it use the [Dom
 
 A simple interface made for usage, with a basic example for the case of an invoice. This program can be adapted for any need to extract data from a spreadsheet file into a PDF file such as payslips or others.
 
-----
-
-[GitHub csvToPdf Repository](https://github.com/aselyamanis/csv-to-pdf)
-
-[GitHub @aselyamanis](https://github.com/aselyamanis)
-
-Email : aselyamanis@gmail.com
-
----
-
 
 
 ## Requirements
@@ -27,9 +17,9 @@ Email : aselyamanis@gmail.com
 
 ## Usage
 
-The interface consists of three pages. To run the [home page](public/index.php).
+The interface consists of three pages. 
 
-### Generate PDF page :
+#### Generate PDF page
 
 This is the home page of the interface where to submit the CSV file to extract.
 
@@ -39,16 +29,28 @@ The CSV file must be customized. The keyword must be assigned at the first colum
 
 Rows can be added above the "nextFile" row as needed for the data to be extracted for each PDF file.
 
-Note: There is a test CSV file which can be used as a template. The data to be extracted must be assigned to the same fields in the same way as this file. See the [dataType.csv](public/dataType.csv). 
+Note: There is a test CSV file which can be used as a template. The data to be extracted must be assigned to the same fields in the same way as this file. See the [dataType.csv](public/dataType.csv).
 
-### Download PDF page :
+To run the [home page](public/index.php). 
+
+#### Download PDF page
 
 In this second page the list of generated PDF files is displayed for download.
 
-### Archive ZIP page :
+#### Archive ZIP page
 
-Also an archive ZIP can be downloaded of all the PDF files generated in the third pages.
+Also an archive ZIP can be downloaded of all the PDF files generated in the third page.
 
 ---
 
 *Many thanks to the [Dompdf](https://github.com/dompdf/dompdf) team.*
+
+----
+
+[GitHub csvToPdf Repository](https://github.com/aselyamanis/csv-to-pdf)
+
+[GitHub @aselyamanis](https://github.com/aselyamanis)
+
+<aselyamanis@gmail.com>
+
+---
