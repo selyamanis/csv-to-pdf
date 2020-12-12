@@ -1,15 +1,14 @@
-<?php 
-$title = 'Error';
+<?php $title = 'Error'; ?>
 
-ob_start(); 
-?>
+<?php ob_start(); ?>
 
 <h4 class="my-5">Error</h4>
 
 <?php 
-echo $errorMessage;
+	echo $errorMessage; 
+?>
 
 
-$content = ob_get_clean();
+<?php $content = ob_get_clean(); ?>
 
-require('template.php');
+<?php require('template.php'); ?>

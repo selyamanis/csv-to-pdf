@@ -1,8 +1,6 @@
-<?php 
-$title = 'Home page';
+<?php $title = 'Home page'; ?>
 
-ob_start();
-?>
+<?php ob_start(); ?>
 
 <h4 class="my-5">Generate PDF</h4>
 
@@ -44,7 +42,8 @@ if (isset($_FILES['csvFile']) AND $_FILES['csvFile']['error'] == 0)
         }  
     }
 } 
+?>
 
-$content = ob_get_clean();
+<?php $content = ob_get_clean(); ?>
 
-require('../templates/template.php');
+<?php require('../templates/template.php'); ?>
