@@ -10,14 +10,9 @@
        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     </head>
-
-    <div class="container">
-	    <body>
-	        <nav class="my-5 navbar navbar-expand-lg navbar-light bg-light">
+		<header>
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
 				<a class="navbar-brand" href="../interface/generatePdf.php"><h2>csvToPdf extractor</h2></a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-				</button>
 	            <div class="collapse navbar-collapse" id="navbarSupportedContent">
 	                <ul class="navbar-nav ml-auto">
 	                    <li class="nav-item <?php if ($title == 'Home page') { echo ' active'; } ?>">
@@ -32,9 +27,19 @@
 	                </ul>
 	            </div>
 	        </nav>
+		</header>
 
-	        <?= $content ?>
+		<div class="container vertical-center">
+		    <body>
 
-	    </body>
-    </div>
+		        <?= $content ?>
+
+		    </body>
+		</div>
+
+		<footer class="text-muted text-center fixed-bottom">
+			<a target="_blank" href="https://github.com/aselyamanis/csv-to-pdf"><img border="0" alt="github" src="../public/images/gitHubIcon.svg" width="20" height="20"></a>
+			<a class="text-muted text-center" target="_blank" href="https://github.com/aselyamanis/csv-to-pdf">GitHub</a></br>
+			<a class="navbar-brand text-muted text-center" href="../interface/generatePdf.php"><h3>csvToPdf extractor</h3></a>
+		</footer>
 </html>
