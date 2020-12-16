@@ -1,11 +1,11 @@
-<?php $title = 'Error'; ?>
+<?php $title = 'csvToPdf / Error'; ?>
 
 <?php ob_start(); ?>
 
-<h4 class="my-5">Error</h4>
+<h4 class="mt-5 mb-4">Error</h4>
 
 <?php 
-	echo $errorMessage; 
+	echo $_GET['errorMessage'];
 ?>
 
 

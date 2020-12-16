@@ -1,8 +1,16 @@
-<?php $title = 'Home page'; ?>
+<?php $title = 'csvToPdf / Home'; ?>
 
 <?php ob_start(); ?>
 
-<h4 class="my-5">Generate PDF</h4>
+<h4 class="mt-5 mb-4">Generate PDF</h4>
+
+<h5 class="my-3">csvToPdf is a CSV data to PDF extractor</h5>
+
+<p>Firstly, csvToPdf use PHP to extract CSV data into HTML. Lastly, it use the <a target="_blank" href="https://github.com/dompdf/dompdf">Dompdf</a> library to convert HTML to PDF.</p>
+
+<p>This program is made with a basic example for the case of an invoice, which can be adapted for any need to extract data from a spreadsheet file into a PDF file.</p>
+
+<p>Review the <a href="usagePage.php">Usage page</a> or the <a href="../README.md">README.md</a> file before submitting your CSV file.</p>
 
 <form class="my-3" method="post" enctype="multipart/form-data">
     <div class="my-3 form-group">
@@ -32,9 +40,9 @@ if (isset($_FILES['csvFile']) AND $_FILES['csvFile']['error'] == 0)
             
             // Redirection to generate PDF
             if (headers_sent()) {
-                die ("Redirect failed. Please click on this link: <a href='../csvToPdf.php'> link</a>");
+                die ("Redirect failed. Please click on this link: <a href='archive/emptyPdf.php'> link</a>");
             } else {
-                header('Location: ../csvToPdf.php');
+                header('Location: archive/emptyPdf.php');
             }
 
         } else {

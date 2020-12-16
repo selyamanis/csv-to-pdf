@@ -6,7 +6,8 @@ require_once 'dompdf/autoload.inc.php';
 use Dompdf\Dompdf;
 
 // Output the generated PDF
-function generatePdf($invoiceHtml, $fileName) { 
+function generatePdf($invoiceHtml, $fileName) 
+{ 
     $dompdf = new Dompdf(); 
     $dompdf->loadHtml($invoiceHtml);
     $dompdf->setPaper('A4', 'portrait');
@@ -16,14 +17,16 @@ function generatePdf($invoiceHtml, $fileName) {
 }
 
 // Random reference for Order and Reduction
-function rand_chars($c, $l, $u = FALSE) {
+function rand_chars($c, $l, $u = FALSE) 
+{
     if (!$u) for ($s = '', $i = 0, $z = strlen($c)-1; $i < $l; $x = rand(0,$z), $s .= $c{$x}, $i++);
     else for ($i = 0, $z = strlen($c)-1, $s = $c{rand(0,$z)}, $i = 1; $i != $l; $x = rand(0,$z), $s .= $c{$x}, $s = ($s{$i} == $s{$i-1} ? substr($s,0,-1) : $s), $i=strlen($s));
     return $s;
 }  
 
 // Remove accents from PDF filenames
-function remove_accents($str, $encoding = 'utf-8') {
+function remove_accents($str, $encoding = 'utf-8') 
+{
     // Transform accented characters into HTML entities
     $str = htmlentities($str, ENT_NOQUOTES, $encoding);
 
@@ -106,10 +109,13 @@ if (($handle = fopen("public/uploads/data.csv", "r")) !== FALSE) {
     }
     // If there is no field named "nextFile" at the first column
     if ($data[0] !== "nextFile") {
-        $errorMessage = "The content of selected CSV file is not valid! 
-            <p>See the README.md file and try again.</p>
-            <p>Click on this link to generate PDF : <a href='interface/generatePdf.php'> link</a></p>";
-            require('templates/error.php');
+        $errorMessage = "<p>The content of selected CSV file is not valid!</p> 
+            <p>Please review the <a href='../interface/usagePage.php'>Usage page</a> or the <a href='../README.md'>README.md</a> file before submitting your CSV file.</p>
+            <p>Click on this link to generate PDF : <a href='../interface/homePage.php'> link</a></p>";
+        // Redirection to the error view 
+        $url = "templates/error.php?errorMessage=".$errorMessage;
+        $url = str_replace(PHP_EOL, '', $url);
+        header("Location: ".$url);
     } 
 }
 
@@ -302,8 +308,8 @@ HTML;
     $pdfName = 'interface/archive/pdf/' . remove_accents($name) . '_FA000'.$invoiceNum.'_' . date("d-m-Y") . '.pdf'; 
     generatePdf($invoiceHtml, $pdfName); 
 
-    // Redirection to download PDF
-    header('Location: interface/downloadPdf.php');
+    // Redirection to generate another PDF
+    header('Location: interface/archive/downloadPdf.php');
 
     // Initialize the HTML invoice code
     $invoiceHtml ='';
