@@ -1,4 +1,5 @@
 <?php
+// empty previous PDF files generated and the archive
 $pathPdf = 'pdf/';
 $pathZip = 'zip/';
 
@@ -16,5 +17,5 @@ function emptyPdf($path)
 emptyPdf($pathPdf);
 emptyPdf($pathZip);
 
-// Redirection to generate ODF
+// Redirection to generate PDF
 header('Location: ../../csvToPdf.php');
