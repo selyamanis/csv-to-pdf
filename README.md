@@ -15,9 +15,17 @@ This program is made with a basic example for the case of an invoice, which can 
  * Dompdf Library
  * The same requirements of Dompdf version 0.8.2. See the [README.md](dompdf/README.md/)
 
+## Installation
+
+Dowload the release csvToPdf version.
+
+Extract the ZIP file on your server. Such as a local server accessible at : http://localhost/.
+
+Run the interface by opening the [public](public/) folder, to access the [Home page](public/index.php/).
+
 ## Usage
 
-Submit the CSV file to extract on the [Home page](public/index.php/).
+Submit the CSV file to extract on the Home page to generate PDF and then download it.
 
 Before that, the CSV file must be customized. 
 
