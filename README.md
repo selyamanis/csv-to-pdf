@@ -50,7 +50,7 @@ Here is an example of the [output PDF](public/types/output-type/) which can be c
 
 [GitHub csvToPdf Repository](https://github.com/selyamanis/csv-to-pdf/)
 
-[GitHub @aselyamanis](https://github.com/selyamanis/)
+[GitHub @selyamanis](https://github.com/selyamanis/)
 
 <selyamanisalim@gmail.com>
 
