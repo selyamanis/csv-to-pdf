@@ -1,9 +1,9 @@
 csvToPdf
 ========
 
-**csvToPdf is a CSV data to PDF extractor**
+**csvToPdf is a CSV data (spreadsheet file) to PDF extractor**
 
-Firstly, csvToPdf use PHP to extract CSV data into HTML. Lastly, it use the [Dompdf](https://github.com/dompdf/dompdf/) library to convert HTML to PDF.
+Firstly, the csvToPdf program uses PHP to extract CSV data into HTML. Lastly, it uses the [Dompdf](https://github.com/dompdf/dompdf/) library to convert HTML to PDF.
 
 This program is made with a basic example for the case of an invoice, which can be adapted for any need to extract data from a spreadsheet file into a PDF file.
 
