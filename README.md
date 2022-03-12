@@ -17,7 +17,7 @@ This program is made with a basic example for the case of an invoice, which can 
 
 ## Installation
 
-Dowload the release csvToPdf version.
+Download the latest release of csvToPdf.
 
 Extract the ZIP file on your server. Such as a local server accessible at : http://localhost/.
 
